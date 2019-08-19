@@ -1,0 +1,21 @@
+.main-footer {
+    width: 100vw;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    &__wrapper{
+        width: calc(100% - 780px);
+        border-top: 6px solid $ibsmaincolor;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        margin-top: 45px;
+        &-title{
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 20px;
+        }
+    }
+}

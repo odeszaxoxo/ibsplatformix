@@ -1,0 +1,27 @@
+.main-header{
+    width: 100vw;
+    height: 140px;
+    background-image: linear-gradient(to bottom, #3ab9ff, rgba(58, 186, 255, 0));
+    display: flex;
+    justify-content: center;
+    &__wrapper{
+        width: calc(100% - 780px);
+
+    }
+    &__item{
+
+    }
+    &__logo{
+        min-width: 165px;
+        min-height: 62px; 
+    }
+    &__achievements{
+
+    }
+}
+.form-control.employee {
+    width: 628px;
+    height: 52px;
+    border-radius: 3px;
+    background-color: rgba(133, 136, 140, 0.1);
+}
