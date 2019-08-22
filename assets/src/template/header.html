@@ -2,22 +2,33 @@
     <div class="main-header__wrapper">
         <div class="main-header__item">
             <img class="main-header__logo" src="../img/logo-ibs-platformix.svg" href="">
-            <input class="form-control employee" type="text" placeholder="Search" aria-label="Search">
-            <button class="main-header__achievements">Наш результат</button>
+                <div class="input-group employee">
+                    <input class="form-control employee" type="text" placeholder="Поиск сотрудников" aria-label="Search" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary employee" type="button" id="button-addon2">Найти</button>
+                        </div>
+                </div>
+            <button class="main-header__achievements"><img class="main-header__achievements-icon" href="" src="../img/cup.svg"><span class="main-header__achievements-text">Наш результат</span></button>
         </div>
-        <div class="main-header__item">
+        <div class="main-header__item second">
             <nav class="main-header__nav-bar">
                 <div class="main-header__nav-container">
-                    <a class="main-header__nav-link" href="#">Home</a>
-                    <a class="main-header__nav-link" href="#">Features</a>
-                    <a class="main-header__nav-link" href="#">Pricing</a>
-                    <a class="main-header__nav-link" href="#">Disabled</a>
-                    <a class="main-header__nav-link" href="#">Home</a>
-                    <a class="main-header__nav-link" href="#">Home</a>
-                    <a class="main-header__nav-link" href="#">Home</a>
+                    <a class="main-header__nav-link" href="#">О компании</a>
+                    <a class="main-header__nav-link" href="#">Новости</a>
+                    <a class="main-header__nav-link" href="#">Моя работа</a>
+                    <a class="main-header__nav-link" href="#">Сотрудники</a>
+                    <a class="main-header__nav-link" href="#">Бенефиты</a>
+                    <a class="main-header__nav-link" href="#">Обучение</a>
+                    <a class="main-header__nav-link last" href="#">Вакансии</a>
                 </div>
             </nav>
-            <input class="form-control search" type="text" placeholder="Search" aria-label="Search">
+            
+            <div class="input-group search">
+                <input class="form-control search" type="text" placeholder="Поиск по сайту" aria-label="Search">
+                <div class="input-group-append">
+                        <i class="material-icons search">search</i>
+                </div>
+            </div>
         </div>
     </div>
 </header>
