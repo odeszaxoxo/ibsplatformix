@@ -4,11 +4,13 @@
     display: flex;
     justify-content: center;
     &__wrapper{
+        position: relative;
         width: calc(100% - 780px);
         border-top: 6px solid $ibsmaincolor;
         height: 100%;
         display: flex;
         justify-content: space-between;
+        z-index: auto;
     }
     &__item{
         margin-top: 45px;
@@ -17,5 +19,11 @@
             font-weight: normal;
             line-height: 20px;
         }
+    }
+    &__logo{
+        position: absolute;
+        top: -91px;
+        right: 0;
+        z-index: -100;
     }
 }
