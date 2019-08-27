@@ -17,6 +17,7 @@
 //= ../../../node_modules/bootstrap/js/dist/scrollspy.js
 //= ../../../node_modules/bootstrap/js/dist/tab.js
 //= ../../../node_modules/bootstrap/js/dist/toast.js
+//= ../../../node_modules/owl.carousel/dist/owl.carousel.min.js
 
 // Импортируем другие js-файлы
-//= my.js
+//= index.js
