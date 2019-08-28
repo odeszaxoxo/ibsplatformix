@@ -83,8 +83,9 @@
             width: 100%;
             height: 560px;
             position: relative;
-            background-color: black;
+            background-image: url(../img/slide.jpg);
             border-radius: 10px;
+            z-index: -100;
             
         }
         &-title{
@@ -113,6 +114,121 @@
                 display: flex;
                 justify-content: flex-start;
             }
+        }
+    }
+    &__preview{
+        position: relative;
+    }
+    &__profile{
+        position: absolute;
+        top: 65px;
+        right: 121px;
+        z-index: 100;
+        &-container{
+            width: 321px;
+            height: 546px;
+            background-color: white;
+            border-radius: 9px;
+            box-shadow: 15px 25px 35px 0 rgba(74, 47, 7, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        &-button{
+            border: none;
+            background-color: transparent;
+            font-size: 22px;
+            font-weight: 800;
+            color: #2e3033;
+            padding-left: 30px;
+            padding-top: 30px;
+            margin: 0;
+            text-align: left;
+        }
+        &-header{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        &-image{
+            max-width: 97px;
+            max-height: 97px;
+        }
+        &-info{
+            width: 180px;
+            margin-left:15px;
+        }
+        &-greets{
+            font-size: 15px;
+            font-weight: bold;
+            color: #2e3033;
+            margin-bottom: 5px;
+        }
+        &-description{
+            font-size: 12px;
+            font-weight: normal;
+            color: #85888c;
+            margin-bottom: 0;
+            line-height: 15px;
+        }
+        &-dropdown{
+            margin-top: 20px;
+            width: 264px;
+            margin-left: 29px;
+            &-label{
+                width: 22px;
+                height: 22px;
+                background-color: #e4200e;
+                border-radius: 50%;
+                font-size: 11px;
+                font-weight: bold;
+                line-height: 22px;
+                margin:0;
+            }
+            &-text{
+                color: #2e3033;
+                margin:0;
+            }
+        }
+        &-favorites{
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 29px;
+            margin-top: 22px;
+        }
+        &-title{
+
+            &.favorites{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        &-add{
+            margin-left: 60px;
+            border: none;
+            background-color: white;
+            height: 20px;
+            &-icon{
+                height: 20px;
+                width:20px;
+                margin-right: 5px;;
+            }
+        }
+        &-line{
+            width: 264px;
+            height: 1px;
+            opacity: 0.3;
+            background-color: #9da0a6;
+            margin-left: 29px;
+        }
+        &-link{
+            font-size: 17px;
+            font-weight: normal;
+            width: 20px;
+            margin-top: 15px;
+            padding-left: 29px;
+            line-height: 20px;
+            width: 100%;
+            color: #00205b !important;
         }
     }
     &-content{
@@ -335,6 +451,10 @@
                 &-arrow{
                     max-width: 10px;
                     max-height: 10px;
+                    &.down{
+                        transform: rotate(90deg);
+                        margin-left: 5px;
+                    }
                 }
             }
         }
@@ -801,20 +921,32 @@
         width: 50px;
         height: 50px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-        background-color: #ffffff;
+        background-color: #ffffff !important;
         border-radius: 50%;
-        z-index: 1000 !important;
     }
     &-next{
         width: 50px;
         height: 50px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-        background-color: #ffffff;
+        background-color: #ffffff !important;
         border-radius: 50%;
-        z-index: 1000 !important;
         margin-left: 20px;
     }
     &-stage-outer{
         z-index: -10;
+    }
+}
+.btn.btn-secondary.dropdown-toggle{
+    width: 100%;
+    height: 47px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #bcc0c6;
+    &::after{
+        color: black;
+        text-align: right;
+        float: right;
+        margin-top: 10px;
     }
 }
