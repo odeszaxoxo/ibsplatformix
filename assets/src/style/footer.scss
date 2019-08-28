@@ -11,6 +11,7 @@
         display: flex;
         justify-content: space-between;
         z-index: auto;
+        background-color: white;
     }
     &__item{
         margin-top: 45px;
@@ -18,6 +19,11 @@
             font-size: 15px;
             font-weight: normal;
             line-height: 20px;
+        }
+        &-text{
+            color: #00205b;
+            font-size: 15px;
+            font-weight: normal;
         }
     }
     &__logo{
