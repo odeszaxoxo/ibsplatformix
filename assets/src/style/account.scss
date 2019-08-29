@@ -1,0 +1,166 @@
+.account{
+    display: flex;
+    flex-direction: column;
+    &__content{
+        height: 1000px;
+        width: 1140px;
+        margin-left: 390px;
+        display: flex;
+        justify-content: space-between;
+        &-left{
+            width: 655px;
+        }   
+        &-right{
+            width: 264px;
+        }
+        &-breadcrumbs{
+            background-color: transparent;
+        }
+        &-container{
+            margin-top: 30px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        &-image{
+            
+            &-edit{
+                font-size: 12px;
+                font-weight: normal;
+                color: #85888c; 
+                margin-top: 10px;
+            }
+        }
+        &-line{
+            width: 165px;
+            height: 6px;
+            background-color: #ff9800;
+        }
+    }
+    &__info{
+        margin-left: 30px;
+        width: 100%;
+        &-name{
+            font-size: 30px;
+            font-weight: 800;
+            color: #2e3033;
+            margin: 0;
+        }
+        &-job{
+            font-size: 17px;
+            font-weight: normal;
+            color: #2e3033;
+            margin-top: 5px;
+            margin-bottom: 40px;
+        }
+        &-title{
+            font-size: 17px;
+            font-weight: normal;
+            color: #85888c; 
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+            &-container{
+                width: 267px;
+            }
+            &-item{
+                width: 267px;
+                margin-bottom: 10px;
+            }
+            &-title{
+                margin-bottom: 0;
+                font-size: 15px;
+                font-weight: normal;
+                color: #85888c;
+            }
+        }
+        &-item{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    }
+    &__title{
+        font-size: 70px;
+        font-weight: 800;
+        color: #2e3033;
+        line-height: 75px;
+    }
+}
+.breadcrumb{
+    background-color: transparent;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    &-item{
+        &-link{
+            font-size: 15px;
+            font-weight: normal;
+            color: #85888c;  
+        }
+        &::before{
+            content:"";
+        }
+    }
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content: ">";
+}
+.input-group{
+    &.phone{
+        width: 267px;
+        border: none;
+        margin-right: 0;
+        margin-bottom: 6px;
+    }
+    &.email{
+        width: 267px;
+        border: none;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-top: 24px;
+    }
+}
+.form-control{
+    border: none;
+    padding: 0;
+    &.email{
+        color:  #ff9800;
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 24px;
+    }
+    &.phone{
+        font-size: 17px;
+        font-weight: normal;
+        color: #2e3033;
+        line-height: 24px;
+    }
+    &.birthday{
+        height: 24px;
+        width: 244px;
+        font-size: 17px;
+        font-weight: normal;
+        color: #2e3033;
+        line-height: 24px;
+    }
+}
+#button-addon2{
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    &::after{
+        border: none;
+    }
+}
+#button-addon1{
+    padding-top: 0;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+    &::after{
+        border: none;
+    }
+}
+
