@@ -4,7 +4,8 @@
     &__content{
         margin-bottom: 180px;
         width: 1140px;
-        margin-left: 390px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         justify-content: space-between;
         &-left{
@@ -104,7 +105,6 @@
                 display: flex;
                 justify-content: flex-start;
                 width: 100%;
-                margin-top: 5px;
                 margin-left: 15px;
                 margin-right: 0;
             }
@@ -244,19 +244,21 @@
     }
 }
 .form-control{
-    border: none;
-    padding: 0;
     &.email{
         color:  #ff9800;
         font-size: 17px;
         font-weight: normal;
         line-height: 24px;
+        border: none;
+        padding: 0;
     }
     &.phone{
         font-size: 17px;
         font-weight: normal;
         color: #2e3033;
         line-height: 24px;
+        border: none;
+        padding: 0;
     }
     &.birthday{
         height: 24px;
@@ -265,19 +267,12 @@
         font-weight: normal;
         color: #2e3033;
         line-height: 24px;
-    }
-}
-#button-addon2{
-    height: 24px;
-    width: 24px;
-    background-color: transparent;
-    &::after{
         border: none;
+        padding: 0;
     }
 }
 #button-addon1{
     padding-top: 0;
-    height: 24px;
     width: 24px;
     background-color: transparent;
     border: none;
@@ -285,7 +280,7 @@
         border: none;
     }
 }
-.btn.btn-secondary.dropdown-toggle{
+#dropdownMenuButton2{
     width: 100%;
     height: 68px;
     background-color: white;
@@ -297,7 +292,7 @@
         color: black;
         text-align: right;
         float: right;
-        margin-top: -25px;
+        margin-top: -23px;
         margin-right: 10px;
     }
 }

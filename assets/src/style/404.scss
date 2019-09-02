@@ -1,5 +1,6 @@
 .content{
     position: relative;
+    overflow:auto;
     &__image{
         position: absolute;
         &.first{
@@ -65,6 +66,8 @@
         }
     }
     &__header{
+        margin-left: auto;
+        margin-right: auto;
         position: relative;
         width: 100vw;
         height: 140px;
@@ -83,8 +86,8 @@
     }
     &__404{
         position: relative;
-        margin-left: 390px;
         margin-top: 50px;
+        margin-left: 390px;
     }
     &__text{
         &-big{
