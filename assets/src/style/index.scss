@@ -699,7 +699,6 @@
             }
         }
         &__content{
-            position: relative;
             margin-top: 20px;
             width: 867px;
             border-radius: 12px;
@@ -713,9 +712,9 @@
             &-gradient{
                 position: absolute;
                 height: 400px;
-                width: 10000px;
-                left: -1000px;
-                top: 80px;
+                width: calc(100% + 390px);
+                left: -390px;
+                top: 2516px;
                 background-image: linear-gradient(to bottom, #3ab9ff, rgba(58, 185, 255, 0));
                 opacity: 0.2;
                 z-index: -100;
