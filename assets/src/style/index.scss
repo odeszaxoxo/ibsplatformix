@@ -4,6 +4,7 @@
     align-items: center;
     &-body{
         position: relative;
+        overflow-x: hidden;
         &__image{
             position: absolute;
             &.first{
