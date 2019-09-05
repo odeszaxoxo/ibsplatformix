@@ -6,72 +6,14 @@
         position: relative;
         overflow-x: hidden;
         &__image{
-            position: absolute;
+            position: fixed;
             &.first{
-                top:671px;
-                right:1784px;
-                height: 58px;
-                width: 58px;
+                top: 0;
+                right: -155px;
             }
             &.second{
-                top:828px;
-                right:1746px;
-                height: 309px;
-                width: 309px;
-            }
-            &.third{
-                top:1506px;
-                left:239px;
-                height: 90px;
-                width: 90px;
-            }
-            &.fourth{
-                top:1667px;
-                right:1581px;
-                height: 409px;
-                width: 409px;
-            }
-            &.fifth{
-                top:2140px;
-                right:1609px;
-                height: 115px;
-                width: 115px;
-            }
-            &.sixth{
-                top:2436px;
-                right:1681px;
-                height: 161px;
-                width: 161px;
-            }
-            &.seventh{
-                top:1356px;
-                left:1681px;
-                height: 125px;
-                width: 125px;
-            }
-            &.eigth{
-                top:1659px;
-                left:1790px;
-                height: 309px;
-                width: 309px;
-            }
-            &.nineth{
-                top:2009px;
-                left:1790px;
-                height: 117px;
-                width: 117px;
-            }
-            &.ten{
-                top:2099px;
-                left:1790px;
-                height: 492px;
-                width: 492px;
-            }
-            &.eleven{
-                top:2691px;
-                left:1590px;
-                height: 161px;
-                width: 161px;
+                top: 0;
+                left: -255px;
             }
         }
     }
