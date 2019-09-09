@@ -805,6 +805,9 @@
                 &.employees{
                     margin-left: 15px;
                     margin-top: 9px;
+                    &.big{
+                        margin-top: 0;
+                    }
                 }
                 &.birthdays{
                     margin-left: 15px;
@@ -828,6 +831,11 @@
                 line-height: 20px;
                 color: #2e3033;
                 margin: 0;
+                &.big{
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 24px;
+                }
             }
             &-writeto{
                 height: 20px;
