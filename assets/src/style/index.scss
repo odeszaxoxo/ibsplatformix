@@ -215,6 +215,9 @@
             &.bottom{
                 margin-top: 40px;
             }
+            &.news{
+                margin-top: 60px;
+            }
         }
         &__show-button{
             width: 200px;
@@ -272,6 +275,9 @@
                 width: 263px;
                 border: none;
                 margin-bottom: 5px;
+            }
+            &.news{
+                margin-top: 35px;
             }
         }
         &__preview{
