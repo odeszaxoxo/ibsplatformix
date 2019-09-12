@@ -8,6 +8,9 @@
     "type": "git",
     "url": "git://github.com/itchief/gulp-project-bootstrap-4.git"
   },
+  "scripts": {
+    "build": "gulp"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
