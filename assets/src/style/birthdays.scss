@@ -13,12 +13,14 @@
             font-weight: 800;
             margin-top: 25px;
             margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
         }
         &-item{
             font-size: 15px;
             font-weight: normal;
             margin-top: 15px;
             line-height: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
             cursor: pointer;
             &:hover{
                 color: #ff9800 !important;
@@ -30,6 +32,7 @@
             color: #85888c;
             margin-left: 5px;
             line-height: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
         }
     }
     &__content{
@@ -88,6 +91,7 @@
                 font-size: 20px;
                 font-weight: bold;
             }
+            font-family: 'Montserrat', sans-serif;
         }
         &-link{
             margin-top: 15px;
@@ -115,6 +119,7 @@
             font-size: 15px;
             font-weight: normal;
             color: #00205b;
+            font-family: 'Source Sans Pro', sans-serif;
             &-icon{
                 height: 20px;
                 width:20px;
@@ -191,6 +196,7 @@
                 display: flex;
                 justify-content: flex-start;
                 width: 265px;
+                font-family: 'Source Sans Pro', sans-serif;
             }
             &-header{
                 display: flex;
@@ -198,17 +204,19 @@
             }
             &-count{
                 margin-top: auto;
-                margin-bottom: 2px;
+                margin-bottom: 3px;
                 margin-left: 10px;
                 font-size: 15px;
                 font-weight: normal;
                 color: #85888c;
                 line-height: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
             }
             &-title{
                 margin-bottom: 0;
                 font-size: 30px;
                 font-weight: 800;
+                font-family: 'Montserrat', sans-serif;
             }
             &-line{
                 width: 848px;
@@ -241,6 +249,8 @@
     &__info{
         margin-left: 30px;
         width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
         &-name{
             font-size: 30px;
             font-weight: 800;
@@ -295,10 +305,13 @@
     padding-bottom: 0;
     margin-bottom: 0;
     &-item{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 15px;
         &-link{
             font-size: 15px;
             font-weight: normal;
-            color: #85888c;  
+            color: #85888c;
+            font-family: 'Source Sans Pro', sans-serif;
         }
         &::before{
             content:"";
@@ -307,6 +320,8 @@
 }
 .breadcrumb-item+.breadcrumb-item::before{
     content: ">";
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 #button-addon1{
     padding-top: 0;
@@ -342,6 +357,7 @@
     border: none;
     color: black;
     border-bottom: 3px solid transparent;
+    font-family: 'Source Sans Pro', sans-serif;
     &:hover{
         border-bottom: 3px solid #f68c28;
         color: #f68c28;

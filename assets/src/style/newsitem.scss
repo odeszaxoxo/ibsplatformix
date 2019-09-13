@@ -1,6 +1,41 @@
-.account{
+.department{
     display: flex;
     flex-direction: column;
+    &__buttons{
+        margin-top: 40px;
+        margin-left: 29px;
+    }
+    &__right{
+        margin-left: -29px;
+        &-content{
+            display: flex;
+            flex-direction: column;
+            margin-left: 29px;
+        }
+        &-title{
+            font-size: 22px;
+            font-weight: 800;
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+        &-item{
+            font-size: 15px;
+            font-weight: normal;
+            margin-top: 15px;
+            line-height: 20px;
+            cursor: pointer;
+            &:hover{
+                color: #ff9800 !important;
+            }
+        }
+        &-text{
+            font-size: 15px;
+            font-weight: normal;
+            color: #85888c;
+            margin-left: 5px;
+            line-height: 20px;
+        }
+    }
     &__content{
         margin-bottom: 180px;
         width: 1140px;
@@ -24,15 +59,6 @@
             margin-top: 30px;
             display: flex;
             justify-content: flex-start;
-        }
-        &-image{
-            
-            &-edit{
-                font-size: 12px;
-                font-weight: normal;
-                color: #85888c; 
-                margin-top: 10px;
-            }
         }
         &-line{
             width: 165px;
@@ -60,11 +86,11 @@
             margin-top: 22px;
         }
         &-title{
-
+            font-size: 70px;
+            font-weight: 800;
             &.favorites{
                 font-size: 20px;
                 font-weight: bold;
-                font-family: 'Montserrat', sans-serif;
             }
         }
         &-link{
@@ -76,7 +102,6 @@
             border: none;
             background-color: transparent;
             text-align: left;
-            font-family: 'Source Sans Pro', sans-serif;
             &-arrow{
                 max-width: 10px;
                 max-height: 10px;
@@ -87,14 +112,13 @@
             }
         }
         &-add{
-            margin-left: 41px;
+            margin-left: 53px;
             border: none;
             background-color: white;
             height: 20px;
             font-size: 15px;
             font-weight: normal;
             color: #00205b;
-            font-family: 'Source Sans Pro', sans-serif;
             &-icon{
                 height: 20px;
                 width:20px;
@@ -103,7 +127,6 @@
         }
         &-dropdown{
             width: 264px;
-            margin-bottom: 40px;
             &-container{
                 display: flex;
                 justify-content: flex-start;
@@ -136,12 +159,10 @@
                 font-weight: 800;
                 color: #2e3033;
                 margin-top: 25px;
-                font-family: 'Montserrat', sans-serif;
             }
             &-item{
                 margin-top: 10px;
                 width: 100%;
-                font-family: 'Source Sans Pro', sans-serif;
             }
             &-name{
                 font-size: 15px;
@@ -160,20 +181,66 @@
                 margin-top: 15px;
                 padding-left: 0;
                 color: #00205b;
-                font-family: 'Source Sans Pro', sans-serif;
             }
         }
+        &-month{
+            margin-top: 60px;
+            &-content{
+                display: flex;
+                flex-wrap: wrap;  
+                width: 848px;
+            }
+            &-item{
+                margin-top: 35px;
+                display: flex;
+                justify-content: flex-start;
+                width: 265px;
+                &-count{
+                    font-size: 15px;
+                    font-weight: normal;
+                    line-height: 20px;
+                }
+            }
+            &-line{
+                width: 848px;
+                height: 1px;
+                opacity: 0.3;
+                background-color: #9da0a6;
+                margin-top: -40px;
+                &.bottom{
+                    margin-top: 60px;
+                }
+            }
+        }
+        &-button{
+            width: 149px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: #ff9800;
+            border: none;
+            color: white;
+            margin-left: 25px;
+        }
+        &-header{
+            display: flex;
+            flex-direction: column;
+            width: 848px;
+            &-item{
+                margin-bottom: -15px;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        
     }
     &__info{
         margin-left: 30px;
         width: 100%;
-        font-family: 'Source Sans Pro', sans-serif;
         &-name{
             font-size: 30px;
             font-weight: 800;
             color: #2e3033;
             margin: 0;
-            font-family: 'Montserrat', sans-serif;
         }
         &-job{
             font-size: 17px;
@@ -215,50 +282,6 @@
         font-weight: 800;
         color: #2e3033;
         line-height: 75px;
-        font-family: 'Montserrat', sans-serif;
-    }
-}
-.input-group{
-    &.phone{
-        width: 267px;
-        border: none;
-        margin-right: 0;
-        margin-bottom: 6px;
-    }
-    &.email{
-        width: 267px;
-        border: none;
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-top: 24px;
-    }
-}
-.form-control{
-    &.email{
-        color:  #ff9800;
-        font-size: 17px;
-        font-weight: normal;
-        line-height: 24px;
-        border: none;
-        padding: 0;
-    }
-    &.phone{
-        font-size: 17px;
-        font-weight: normal;
-        color: #2e3033;
-        line-height: 24px;
-        border: none;
-        padding: 0;
-    }
-    &.birthday{
-        height: 24px;
-        width: 244px;
-        font-size: 17px;
-        font-weight: normal;
-        color: #2e3033;
-        line-height: 24px;
-        border: none;
-        padding: 0;
     }
 }
 #button-addon1{
@@ -285,4 +308,24 @@
         margin-top: -23px;
         margin-right: 10px;
     }
+}
+.pagination{
+    border: none;
+    margin-top: 25px;
+    color: black;
+}
+.page-link{
+    border: none;
+    color: black;
+    border-bottom: 3px solid transparent;
+    &:hover{
+        border-bottom: 3px solid #f68c28;
+        color: #f68c28;
+        background-color: transparent;
+    }
+}
+.form-control.new-select{
+    width: 165px;
+    margin-right:  20px;
+    height: 40px;
 }

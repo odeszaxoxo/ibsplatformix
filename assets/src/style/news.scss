@@ -17,6 +17,7 @@
             font-weight: 800;
             margin-top: 25px;
             margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
         }
         &-item{
             font-size: 15px;
@@ -88,6 +89,7 @@
         &-title{
             font-size: 70px;
             font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
             &.favorites{
                 font-size: 20px;
                 font-weight: bold;
@@ -285,25 +287,6 @@
         color: #2e3033;
         line-height: 75px;
     }
-}
-.breadcrumb{
-    background-color: transparent;
-    padding-left: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    &-item{
-        &-link{
-            font-size: 15px;
-            font-weight: normal;
-            color: #85888c;  
-        }
-        &::before{
-            content:"";
-        }
-    }
-}
-.breadcrumb-item+.breadcrumb-item::before{
-    content: ">";
 }
 #button-addon1{
     padding-top: 0;

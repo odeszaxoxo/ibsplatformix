@@ -79,6 +79,7 @@
             border: none;
             background-color: transparent;
             text-align: left;
+            font-family: 'Source Sans Pro', sans-serif;
             &-arrow{
                 max-width: 10px;
                 max-height: 10px;
@@ -165,11 +166,13 @@
     &__info{
         margin-left: 30px;
         width: 100%;
+        font-family: 'Source Sans Pro', sans-serif;
         &-name{
             font-size: 30px;
             font-weight: 800;
             color: #2e3033;
             margin: 0;
+            font-family: 'Montserrat', sans-serif;
         }
         &-job{
             font-size: 17px;
@@ -212,25 +215,6 @@
         color: #2e3033;
         line-height: 75px;
     }
-}
-.breadcrumb{
-    background-color: transparent;
-    padding-left: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    &-item{
-        &-link{
-            font-size: 15px;
-            font-weight: normal;
-            color: #85888c;  
-        }
-        &::before{
-            content:"";
-        }
-    }
-}
-.breadcrumb-item+.breadcrumb-item::before{
-    content: ">";
 }
 .input-group{
     &.phone{
