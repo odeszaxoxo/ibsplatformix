@@ -23,6 +23,16 @@
         z-index: -1;
         &-container{
             width: 1440px;
+            &::after{
+                content: "";
+                width: 1140px;
+                background-color: #ff9800;
+                left: 151px;
+                height: 6px;
+                position: absolute;
+                top: 0;
+                z-index: 1;
+            }
         }
         &-slide{
             width: 100%;
@@ -65,7 +75,6 @@
     }
     &__preview{
         position: relative;
-        z-index: 50;
     }
     &__profile{
         position: absolute;
