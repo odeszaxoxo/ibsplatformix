@@ -1,3 +1,4 @@
+
 .structure{
     display: flex;
     flex-direction: column;
@@ -174,7 +175,10 @@
         &-title{
             font-size: 22px;
             font-weight: 800;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 25px;
+            padding-right: 10px;
+            margin-bottom: 0;
             &.director{
                 margin-left: 0;
                 margin-top: 28px;
@@ -212,6 +216,7 @@
         &-count{
             margin-top: 5px;
             font-size: 15px;
+            margin-bottom: 10px;
             font-weight: normal;
             color: #85888c;
             font-family: 'Source Sans Pro', sans-serif;

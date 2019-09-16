@@ -51,6 +51,7 @@
             padding-left: 150px;
             padding-top: 50px;
             font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
         }
         &-count{
             font-size: 17px;
@@ -65,6 +66,7 @@
             margin-left: 130px;
             line-height: 24px;
             font-family: 'Source Sans Pro', sans-serif;
+            cursor: pointer;
             &-container{
                 padding-left: 150px;
                 margin-top: 200px;
@@ -225,7 +227,7 @@
         }
         &__line{
             margin-top: 20px;
-            width: 868px;
+            width: 848px;
             height: 1px;
             opacity: 0.3;
             background-color: #9da0a6;
@@ -814,6 +816,7 @@
                 margin-top: 5px;
                 display: flex;
                 justify-content: flex-start;
+                cursor: pointer;
             }
             &-accountname{
                 margin:0;
@@ -978,4 +981,9 @@
         float: right;
         margin-top: 10px;
     }
+}
+.dropdown-menu{
+    width: 264px;
+    overflow-y: scroll;
+    max-height: 264px;
 }

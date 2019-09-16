@@ -47,6 +47,12 @@
         &-left{
             width: 655px;
         }   
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            width: 849px;
+        }
+        &
         &-right{
             width: 264px;
             margin-top: 36px;
@@ -224,6 +230,7 @@
             border: none;
             color: white;
             margin-left: 25px;
+            margin-top: 24px;
         }
         &-header{
             display: flex;

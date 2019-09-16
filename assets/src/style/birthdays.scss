@@ -365,3 +365,8 @@
         background-color: transparent;
     }
 }
+.page-item.active .page-link {
+    border-bottom: 3px solid #f68c28;
+    color: #f68c28;
+    background-color: transparent;
+}

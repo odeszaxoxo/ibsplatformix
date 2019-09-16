@@ -60,6 +60,10 @@
                     color: #ff9800;
                     text-decoration: none;
                 }
+                &:focus{
+                    color: #ff9800;
+                    text-decoration: none;
+                }
             }
             &-count{
                 color: #85888c;
@@ -246,8 +250,18 @@
                         height: 8px;
                         background-color: #e1329c;
                         border-radius: 50%;
-                        margin-top: 9px;
+                        margin-top: 8px;
                         margin-left: 5px;
+                    }
+                    &.important{
+                        &:after{
+                            background-color: #2beaa6;
+                        }
+                    }
+                    &.charity{
+                        &:after{
+                            background-color: #e4200e;
+                        }
                     }
                 }
             }
@@ -304,7 +318,7 @@
                 font-size: 15px;
                 font-weight: normal;
                 color: #85888c;
-                margin-top: 13px;
+                margin-top: 12px;
                 margin-bottom: 0;
                 margin-left: 10px;
                 font-family: 'Source Sans Pro', sans-serif;
@@ -439,4 +453,7 @@
     width: 165px;
     margin-right:  20px;
     height: 40px;
+}
+#button-addon3{
+    border: none;
 }

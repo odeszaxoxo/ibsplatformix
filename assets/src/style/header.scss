@@ -21,6 +21,7 @@
     &__logo{
         min-width: 165px;
         min-height: 62px; 
+        cursor: pointer;
     }
     &__achievements{
         max-height: 52px;
@@ -63,8 +64,50 @@
             color: #2e3033;
             font-weight: bold;
             background-color: inherit;
+            position: relative;
             &.last {
                 margin-right: 16px;
+            }
+            &:hover .main-header__dropdown-container{
+                display: block;
+            }
+        }
+    }
+    &__dropdown{
+        &-button{
+            background-color: transparent;
+            color: #2e3033;
+            font-weight: bold;
+            padding: 16px;
+            font-size: 17px;
+            border: none;
+            padding-left: 0;
+        }
+        &-container{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            max-width: 400px;
+            left: -40px;
+            top: calc(100% - 3px);
+            border-radius: 3px;
+            box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+            z-index: 100;
+            &-content{
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            &-link{
+                padding: 10px 30px 10px;
+                color: #2e3033;
+                text-decoration: none;
+                &:hover{
+                    color: #ff9800;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -126,6 +169,7 @@
     &.search{
         color: gray;
         line-height: 40px;
+        cursor: pointer;
     }
 }
 .btn.btn-primary.dropdown-toggle.header{
