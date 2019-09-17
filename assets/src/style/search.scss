@@ -64,6 +64,9 @@
                     color: #ff9800;
                     text-decoration: none;
                 }
+                &.active{
+                    color: #ff9800;
+                }
             }
             &-count{
                 color: #85888c;
@@ -288,6 +291,35 @@
             }
             &-image{
                 max-height: 184px;
+            }
+            &-account{
+                display: flex;
+                justify-content: flex-start;
+                height: 30px;
+                margin-top: 7px;
+                cursor: pointer;
+                &-image{
+                    width: 30px;
+                    height: 30px;
+                }
+                &-name{
+                    font-size: 17px;
+                    font-weight: normal;
+                    color: #85888c;
+                    margin-left: 10px;
+                }
+                &-date{
+                    margin-top: 35px;
+                    color: #85888c;
+                    margin-bottom: 0;
+                    cursor: default;
+                }
+            }
+            &-advertisment{
+                font-size: 17px;
+                font-weight: normal;
+                margin-bottom: 10px;
+                cursor: default;
             }
         }
         &-part{

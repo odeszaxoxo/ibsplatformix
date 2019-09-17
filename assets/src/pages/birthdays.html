@@ -15,7 +15,20 @@
             </nav>
             <div class="birthdays__content-header">
                 <h1 class="birthdays__content-title">Дни рождения</h1>
-                <button class="birthdays__content-button">Поздравить</button>
+                <a href="#open-modal" class="birthdays__content-button">Поздравить</a>
+                <div id="open-modal" class="modal-window">
+                    <div>
+                      <a href="#modal-close" class="modal-close"></a>
+                      <h1>Поздравить коллегу</h1>
+                      <div>
+                          <p class="modal-title">ФИО сотрудника</p>
+                          <input class="modal-input" type="text">
+                          <p class="modal-title">Текст поздравления</p>
+                          <textarea class="modal-input-text" type="text"></textarea>
+                          <button class="modal-input-button">Поздравить</button>
+                      </div>
+                    </div>
+                </div>
             </div>
             <div class="birthdays__content-month">
                 <div class="birthdays__content-month-header">
@@ -271,7 +284,7 @@
             <div class="main-content__line right"></div>
             <div class="birthdays__right-content">
                 <h1 class="birthdays__right-title">Дни рождения</h1>
-                <a class="birthdays__right-item">Все<label class="birthdays__right-text">131</label></a>
+                <a class="birthdays__right-item active">Все<label class="birthdays__right-text">131</label></a>
                 <a class="birthdays__right-item">Недавние<label class="birthdays__right-text">19</label></a>
                 <a class="birthdays__right-item">Ближайшие<label class="birthdays__right-text">12</label></a>
                 <a class="birthdays__right-item">Январь<label class="birthdays__right-text">13</label></a>

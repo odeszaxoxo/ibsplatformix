@@ -24,6 +24,10 @@
             color: #00205b;
             font-size: 15px;
             font-weight: normal;
+            &:hover{
+                color: #ff9800;
+                text-decoration: none;
+            }
         }
     }
     &__logo{

@@ -122,5 +122,9 @@
         font-weight: normal;
         color: #00205b;
         font-family: 'Source Sans Pro', sans-serif;
+        &:hover{
+            color: #ff9800;
+            text-decoration: none;
+        }
     }
 }
