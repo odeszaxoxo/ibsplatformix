@@ -22,3 +22,4 @@
 // Импортируем другие js-файлы
 //= index.js
 //= header.js
+//= newsitem.js

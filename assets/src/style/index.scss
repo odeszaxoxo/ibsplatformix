@@ -740,6 +740,11 @@
                 background-image: linear-gradient(to bottom, #3ab9ff, rgba(58, 185, 255, 0));
                 opacity: 0.2;
                 z-index: -100;
+                &.newsitem{
+                    top: 0;
+                    width: 100vw;
+                    height: 896px;
+                }
             }
         }
         &__row{
