@@ -1,0 +1,37 @@
+.example{
+    display: flex;
+    &-container{
+        flex-flow: row wrap;
+    }
+    &-item{
+        width: 263px;
+        height: 125px;
+        border-radius: 6px;
+        background-color: rgba(133,136,140, 0.1);
+        margin-left: 30px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 30px 25px;
+    }
+    &-icon{
+        width: 35px;
+        height: 35px;
+    }
+    &-info{
+        margin-left: 10px;
+    }
+    &-title{
+        font-size: 20px;
+        font-weight: bold;
+        color: #2e3033;
+        margin-bottom: 5px;
+    }
+    &-description{
+        color: #2e3033;
+        font-size: 12px;
+        font-weight: normal;
+        margin-bottom: 0;
+        line-height: 15px;
+    }
+}
