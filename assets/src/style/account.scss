@@ -1,6 +1,26 @@
+
 .account{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    &__images{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 1380px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: -100;
+        &-append{
+            width: 1140px;
+            height: 100%;
+            margin-top: -400px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+    }
     &__content{
         margin-bottom: 180px;
         width: 1140px;
@@ -76,7 +96,7 @@
             border: none;
             background-color: transparent;
             text-align: left;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             &-arrow{
                 max-width: 10px;
                 max-height: 10px;
@@ -94,7 +114,7 @@
             font-size: 15px;
             font-weight: normal;
             color: #00205b;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             &-icon{
                 height: 20px;
                 width:20px;
@@ -141,7 +161,7 @@
             &-item{
                 margin-top: 10px;
                 width: 100%;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 cursor: pointer;
             }
             &-name{
@@ -161,14 +181,14 @@
                 margin-top: 15px;
                 padding-left: 0;
                 color: #00205b;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
         }
     }
     &__info{
         margin-left: 30px;
         width: 100%;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: "PF Encore Sans Pro";
         &-name{
             font-size: 30px;
             font-weight: 800;

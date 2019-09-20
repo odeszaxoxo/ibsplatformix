@@ -1,69 +1,23 @@
 .content{
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    overflow:auto;
-    &__image{
+    overflow: hidden;
+    &__images{
+        width: 100%;
         position: absolute;
-        &.first{
-            top:-128px;
-            right:823px;
-            height: 246px;
-            width: 246px;
-        }
-        &.second{
-            top:108px;
-            right:352px;
-            height: 58px;
-            width: 58px;
-        }
-        &.third{
-            top:290px;
-            left:1312px;
-            height: 90px;
-            width: 90px;
-        }
-        &.fourth{
-            top:49px;
-            right:-117px;
-            height: 309px;
-            width: 309px;
-        }
-        &.fifth{
-            top:463px;
-            right:164px;
-            height: 125px;
-            width: 125px;
-        }
-        &.sixth{
-            top:659px;
-            right:454px;
-            height: 309px;
-            width: 309px;
-            z-index: -100;
-        }
-        &.seventh{
-            top:743px;
-            left:561px;
-            height: 75px;
-            width: 75px;
-        }
-        &.eigth{
-            top:595px;
-            right:1666px;
-            height: 161px;
-            width: 161px;
-        }
-        &.nineth{
-            top:295px;
-            left:239px;
-            height: 58px;
-            width: 58px;
-        }
-        &.ten{
-            top:46px;
-            right:1782px;
-            height: 58px;
-            width: 58px;
+        top: 0;
+        height: 100%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: -100;
+        &-append{
+            margin-top: -500px;
+            width: 1140px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
         }
     }
     &__header{
@@ -121,7 +75,7 @@
         font-size: 20px;
         font-weight: normal;
         color: #00205b;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: "PF Encore Sans Pro";
         &:hover{
             color: #ff9800;
             text-decoration: none;

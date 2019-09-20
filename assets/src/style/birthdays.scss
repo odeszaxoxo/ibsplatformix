@@ -1,6 +1,25 @@
 .birthdays{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    &__images{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 1958px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: -100;
+        &-append{
+            margin-top: -400px;
+            width: 1140px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+    }
     &__right{
         margin-left: -29px;
         &-content{
@@ -20,7 +39,7 @@
             font-weight: normal;
             margin-top: 15px;
             line-height: 20px;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             cursor: pointer;
             &:hover{
                 color: #ff9800 !important;
@@ -35,7 +54,7 @@
             color: #85888c;
             margin-left: 5px;
             line-height: 20px;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
         }
     }
     &__content{
@@ -122,7 +141,7 @@
             font-size: 15px;
             font-weight: normal;
             color: #00205b;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             &-icon{
                 height: 20px;
                 width:20px;
@@ -199,7 +218,7 @@
                 display: flex;
                 justify-content: flex-start;
                 width: 265px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
             &-header{
                 display: flex;
@@ -213,7 +232,7 @@
                 font-weight: normal;
                 color: #85888c;
                 line-height: 20px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
             &-title{
                 margin-bottom: 0;
@@ -261,7 +280,7 @@
         margin-left: 30px;
         width: 100%;
         font-family: 'Montserrat', sans-serif;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: "PF Encore Sans Pro";
         &-name{
             font-size: 30px;
             font-weight: 800;
@@ -316,13 +335,13 @@
     padding-bottom: 0;
     margin-bottom: 0;
     &-item{
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: "PF Encore Sans Pro";
         font-size: 15px;
         &-link{
             font-size: 15px;
             font-weight: normal;
             color: #85888c;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             &:hover{
                 color: #ff9800;
                 text-decoration: none;
@@ -336,7 +355,7 @@
 .breadcrumb-item+.breadcrumb-item::before{
     content: ">";
     font-size: 15px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "PF Encore Sans Pro";
 }
 #button-addon1{
     padding-top: 0;
@@ -372,7 +391,7 @@
     border: none;
     color: black;
     border-bottom: 3px solid transparent;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "PF Encore Sans Pro";
     &:hover{
         border-bottom: 3px solid #f68c28;
         color: #f68c28;

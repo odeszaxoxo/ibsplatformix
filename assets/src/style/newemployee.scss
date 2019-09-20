@@ -1,6 +1,25 @@
 .new{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    &__images{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 1353px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: -100;
+        &-append{
+            margin-top: -400px;
+            width: 1140px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+    }
     &__right{
         margin-left: -29px;
         margin-top: 95px;
@@ -46,7 +65,7 @@
             cursor: pointer;
             justify-content: flex-start;
             border: solid 3px transparent;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             &:hover{
                 border: solid 3px #ff9800;
             }
@@ -104,7 +123,7 @@
                 font-size: 15px;
                 font-weight: bold;
                 margin-left: 10px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
         }
         

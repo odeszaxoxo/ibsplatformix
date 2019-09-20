@@ -1,6 +1,25 @@
 .searchpage{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    &__images{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 2819px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: -100;
+        &-append{
+            margin-top: -400px;
+            width: 1140px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+    }
     &__buttons{
         margin-top: 40px;
         margin-left: 29px;
@@ -26,7 +45,7 @@
             font-weight: normal;
             margin-top: 15px;
             line-height: 20px;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             cursor: pointer;
             &:hover{
                 color: #ff9800 !important;
@@ -38,8 +57,8 @@
             color: #85888c;
             margin-left: 5px;
             line-height: 20px;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
+            font-family: "PF Encore Sans Pro";
             font-family: 'Montserrat', sans-serif;
         }
         &-categories{
@@ -236,7 +255,7 @@
             margin-bottom: 20px;
             display: flex;
             justify-content: flex-start;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             cursor: pointer;
             &-info{
                 display: flex;
@@ -353,7 +372,7 @@
                 margin-top: 12px;
                 margin-bottom: 0;
                 margin-left: 10px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
             &-header{
                 display: flex;

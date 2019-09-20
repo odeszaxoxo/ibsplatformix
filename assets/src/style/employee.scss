@@ -1,6 +1,25 @@
 .worker{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    &__images{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 1353px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: -100;
+        &-append{
+            margin-top: -500px;
+            width: 1140px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+    }
     &__right{
         margin-left: -29px;
         margin-top: 95px;
@@ -79,7 +98,7 @@
             border: none;
             background-color: transparent;
             text-align: left;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             &-arrow{
                 max-width: 10px;
                 max-height: 10px;
@@ -166,7 +185,7 @@
     &__info{
         margin-left: 30px;
         width: 100%;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: "PF Encore Sans Pro";
         &-name{
             font-size: 30px;
             font-weight: 800;

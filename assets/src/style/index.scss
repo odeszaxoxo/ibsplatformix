@@ -6,16 +6,121 @@
     &-body{
         position: relative;
         overflow-x: hidden;
-        &__image{
-            position: fixed;
+        &__images{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            height: 100%;
             z-index: -100;
-            &.first{
-                top: 0;
-                right: -155px;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            &-append{
+                width: 1140px;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
             }
-            &.second{
-                top: 0;
-                left: -255px;
+            &-item{
+                z-index: -1;
+                position: absolute;
+                &.first{
+                    top: 681px;
+                    width: 58px;
+                    height: 58px;
+                    left: -307px;
+                }
+                &.second{
+                    top: 828px;
+                    width: 309px;
+                    height: 309px;
+                    left: -520px;
+                }
+                &.third{
+                    top: 1188px;
+                    width: 161px;
+                    height: 161px;
+                    left: -276px;
+                }
+                &.four{
+                    top: 1453px;
+                    width: 58px;
+                    height: 58px;
+                    left: -336px;
+                }
+                &.five{
+                    top: 1506px;
+                    width: 90px;
+                    height: 90px;
+                    left: -146px;
+                }
+                &.six{
+                    top: 1667px;
+                    width: 409px;
+                    height: 409px;
+                    left: -540px;
+                }
+                &.seven{
+                    top: 2140px;
+                    width: 115px;
+                    height: 115px;
+                    left: -189px;
+                }
+                &.eight{
+                    top: 2436px;
+                    width: 161px;
+                    height: 161px;
+                    left: -307px;
+                }
+                &.nine{
+                    top: 733px;
+                    width: 246px;
+                    height: 246px;
+                    right: -514px;
+                }
+                &.ten{
+                    top: 1038px;
+                    width: 125px;
+                    height: 125px;
+                    right: -314px;
+                }
+                &.eleven{
+                    top: 1244px;
+                    width: 75px;
+                    height: 75px;
+                    right: -428px;
+                }
+                &.twelve{
+                    top: 1399px;
+                    width: 309px;
+                    height: 309px;
+                    right: -473px;
+                }
+                &.thirteen{
+                    top: 1844px;
+                    width: 58px;
+                    height: 58px;
+                    right: -364px;
+                }
+                &.fourteen{
+                    top: 1977px;
+                    width: 117px;
+                    height: 117px;
+                    right: -281px;
+                }
+                &.fifteen{
+                    top: 2149px;
+                    width: 492px;
+                    height: 492px;
+                    right: -620px;
+                }
+                &.sixteen{
+                    top: 2641px;
+                    width: 161px;
+                    height: 161px;
+                    right: -161px;
+                }
             }
         }
     }
@@ -65,7 +170,7 @@
             width: 480px;
             margin-left: 130px;
             line-height: 24px;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             cursor: pointer;
             &-container{
                 padding-left: 150px;
@@ -108,7 +213,7 @@
             display: flex;
             justify-content: flex-start;
             margin-top: 20px;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
         }
         &-image{
             max-width: 97px;
@@ -117,7 +222,7 @@
         &-info{
             width: 186px;
             margin-left:15px;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
         }
         &-greets{
             font-size: 15px;
@@ -152,7 +257,7 @@
             &-text{
                 color: #2e3033;
                 margin:0;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 font-weight: bold;
                 cursor: pointer;
             }
@@ -166,7 +271,7 @@
         &-title{
 
             &.favorites{
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 font-size: 20px;
                 font-weight: bold;
             }
@@ -176,7 +281,7 @@
             border: none;
             background-color: white;
             height: 20px;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             color: #00205b;
             &-icon{
                 height: 20px;
@@ -204,7 +309,7 @@
             width: 100%;
             color: #00205b !important;
             cursor: pointer;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "PF Encore Sans Pro";
             &:hover{
                 color: #ff9800 !important;
                 text-decoration: none;
@@ -303,7 +408,7 @@
                 font-weight: bold;
                 vertical-align: top;
                 cursor: pointer;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
             
         }
@@ -360,7 +465,7 @@
                 font-weight: normal;
                 color: white;
                 width: 500px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
             &-footer{
                 margin-top: 35px;
@@ -368,7 +473,7 @@
                 color: white;
                 display: flex;
                 justify-content: flex-start;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 &.vertical{
                     margin-top: 15px;
                 }
@@ -403,7 +508,7 @@
                 margin-left: 15px;
                 font-size: 15px;
                 font-weight: bold;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
         }
         &__photos{
@@ -450,7 +555,7 @@
                 border: none;
                 background-color: transparent;
                 text-align: left;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 &:hover{
                     color: #ff9800;
                     text-decoration: none;
@@ -477,7 +582,7 @@
                 font-size: 17px;
                 font-weight: normal;
                 line-height: 24px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
             &-button{
                 width: 149px;
@@ -487,7 +592,7 @@
                 border: none;
                 color: white;
                 margin-top: 20px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
         }
         &__news{
@@ -544,7 +649,7 @@
                 line-height: 20px;
                 text-align: center;
                 margin-bottom: 0;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 &.first{    
                     background-color: #ff9800;
                 }
@@ -562,7 +667,7 @@
                 color: #85888c;
                 display: flex;
                 justify-content: flex-start;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 
             }
             &-description{
@@ -570,7 +675,7 @@
                 margin-top: 5px;
                 margin-bottom: 0;
                 font-size: 15px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 &.right{
                     font-size: 15px;
                     font-weight: normal;
@@ -606,7 +711,7 @@
                     margin-top: auto;
                     margin-left: 5px;
                     margin-bottom: 0;
-                    font-family: 'Source Sans Pro', sans-serif;
+                    font-family: "PF Encore Sans Pro";
                 }
             }
             &-likes{
@@ -709,7 +814,7 @@
                 border: none;
                 background-color: transparent;
                 text-align: left;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 &-arrow{
                     max-width: 10px;
                     max-height: 10px;
@@ -797,7 +902,7 @@
                 color: #2e3033;
                 width:178px;
                 line-height: 15px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
         }
         &__container{
@@ -859,7 +964,7 @@
             }
             &-item{
                 width: 263px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
             }
             &-image{
                 max-width: 60px;
@@ -873,7 +978,7 @@
                     display: flex;
                     justify-content: flex-start;
                     max-height: 60px;
-                    font-family: 'Source Sans Pro', sans-serif;
+                    font-family: "PF Encore Sans Pro";
                     &.big{
                         margin-top: 25px;
                         display: flex;
@@ -903,6 +1008,7 @@
                 }
             }
             &-info{
+                overflow: hidden;
                 &.employees{
                     margin-left: 15px;
                     margin-top: 9px;
@@ -912,6 +1018,7 @@
                 }
                 &.birthdays{
                     margin-left: 15px;
+                    
                 }
                 &.new-employees{
                     margin-left: 15px;
@@ -922,7 +1029,7 @@
                 line-height: 20px;
                 color: #85888c;
                 margin: 0;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: "PF Encore Sans Pro";
                 &.big{
                     font-size: 12px;
                     font-weight: normal;
@@ -950,7 +1057,7 @@
                 background-color: transparent;
                 text-align: left;
                 padding-left: 0;      
-                font-family: 'Source Sans Pro', sans-serif;    
+                font-family: "PF Encore Sans Pro";    
                 &:hover{
                     color: #ff9800;
                     text-decoration: none;

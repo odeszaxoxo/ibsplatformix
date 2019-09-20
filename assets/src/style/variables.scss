@@ -3,3 +3,16 @@
 $red:     #cc2eaa;
 $green:   #2ecc71;
 
+@font-face {
+    font-family: 'PF Encore Sans Pro';
+    src: url('../fonts/PFEncoreSansProRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Encore Sans Pro';
+    src: url('../fonts/PFEncoreSansProBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
