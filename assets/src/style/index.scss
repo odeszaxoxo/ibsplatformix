@@ -242,7 +242,14 @@
             margin-top: 20px;
             width: 264px;
             margin-left: 29px;
+            position: relative;
+            z-index: 10;
             cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 3px;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+            border: solid 1px #bcc0c6;
             &-label{
                 width: 22px;
                 height: 22px;
@@ -252,14 +259,36 @@
                 font-weight: bold;
                 line-height: 22px;
                 margin:0;
+                color: white;
                 cursor: pointer;
+                margin-left: 5px;
             }
             &-text{
-                color: #2e3033;
+                color: #2e3033 !important;
                 margin:0;
                 font-family: "PF Encore Sans Pro";
                 font-weight: bold;
                 cursor: pointer;
+                height: 100%;
+                margin-left: 60px;
+            }
+            &-outer{
+                width: 200px;
+                position: absolute;
+                height: 100%;
+                left: 0;
+                top: 0;
+                text-align: center;
+                line-height: 47px;
+                color: #2e3033 !important;
+                margin:0;
+                font-family: "PF Encore Sans Pro";
+                padding-left: 60px;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: none;
+                }
             }
         }
         &-favorites{
@@ -353,6 +382,9 @@
                 background-color: #ff9800;
                 opacity: 1;
                 margin-left: 29px;
+                &.newspage{
+                    margin-left: 8px;
+                }
             }
             &.bottom{
                 margin-top: 40px;
@@ -427,6 +459,8 @@
             }
             &.news{
                 margin-top: 35px;
+                margin-left: 8px;
+                overflow-x: visible;
             }
         }
         &__preview{
@@ -593,6 +627,9 @@
                 color: white;
                 margin-top: 20px;
                 font-family: "PF Encore Sans Pro";
+            }
+            &.newspage{
+                margin-left: 8px;
             }
         }
         &__news{
@@ -1110,21 +1147,43 @@
     }
 }
 .btn.btn-secondary.dropdown-toggle{
-    width: 100%;
+    width: 64px;
     height: 47px;
     background-color: white;
-    border-radius: 3px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-    border: solid 1px #bcc0c6;
+    position: relative;
+    border: none;
+    outline: none;
+    &:active{
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+    &:focus{
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+        outline: 0;
+        background-color: transparent;
+    }
     &::after{
         color: black;
         text-align: right;
         float: right;
-        margin-top: 10px;
     }
 }
 .dropdown-menu{
     width: 264px;
     overflow-y: scroll;
     max-height: 264px;
+}
+#dropdownMenuButton4{
+    margin-left: 200px;
+    &::after{
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+}
+#dropdownMain{
+    &.show{
+        left: -200px !important;
+    }
 }
