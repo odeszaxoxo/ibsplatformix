@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    &__voting{
+        margin-left: 29px;
+        margin-top: 25px;
+    }
     &__images{
         width: 100%;
         position: absolute;
