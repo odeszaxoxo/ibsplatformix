@@ -879,9 +879,8 @@
             border-radius: 12px;
             box-shadow: 15px 25px 35px 0 rgba(74, 47, 7, 0.1);
             border: solid 6px #ff9800;
-            height: 410px;
             display: flex;
-            justify-content: flex-start;
+            flex-direction: column;
             z-index: auto;
             background-color: white;
             &-gradient{
@@ -901,16 +900,18 @@
             }
         }
         &__row{
-            width: 289px;
             z-index: 1;
+            display: flex;
+            justify-content: flex-start;
             &.bordered{
-                border-right: 1px solid #e3e4e5;
+                border-bottom: 1px solid #e3e4e5;
             }
         }
         &__item{
             height: 134px;
             padding-left: 25px;
             padding-top: 35px;
+            width: 286px;
             display: flex;
             justify-content: flex-start;
             cursor: pointer;
@@ -918,7 +919,7 @@
                 background-color: rgba(133, 136, 140, 0.1);
             }
             &.bordered{
-                border-bottom: 1px solid #e3e4e5;
+                border-right: 1px solid #e3e4e5;
             }
             &-info{
                 margin-top: 5px;
