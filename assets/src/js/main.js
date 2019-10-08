@@ -23,3 +23,4 @@
 //= index.js
 //= header.js
 //= newsitem.js
+//= sample.js

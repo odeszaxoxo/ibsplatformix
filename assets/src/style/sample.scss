@@ -15,6 +15,14 @@
             width: 263px;
             margin-top: 12px;
         }
+        &-dropdown{
+            &-title{
+                font-size: 17px;
+                font-weight: normal;
+                color: #85888c;
+                margin-top: 50px;
+            }
+        }
         &-title{
             color: #2e3033;
             font-size: 50px;
@@ -31,6 +39,13 @@
                 margin-top: 50px;
             }
         }
+        &-accordion-title{
+            color: #2e3033;
+            font-size: 30px;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 50px;
+        }
         &-line{
             width: 848px;
             height: 1px;
@@ -46,6 +61,22 @@
             }
             &.middle{
                 margin-top: 50px;
+            }
+        }
+        &-button{
+            &-default{
+                margin-top: 50px;
+                width: 212px;
+                height: 45px;
+                border-radius: 3px;
+                background-color: #ff9800;
+                color: white;
+                font-size: 15px;
+                font-weight: bold;
+                border:none;
+                &:hover{
+                    opacity: 0.7;
+                }
             }
         }
         &-links{
@@ -356,9 +387,195 @@
                 }
             }
         }
+        &-announcement{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            &-title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 30px;
+                font-weight: 800;
+            }
+            &-container{
+                display: flex;
+                justify-content: flex-start;
+            }
+            &-image{
+                max-width: 263px;
+                max-height: 184px;
+            }
+            &-info{
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+                width: 480px;
+                &-date{
+                    font-family: "PF Encore Sans Pro";
+                    font-size: 17px;
+                    font-weight: normal;
+                    color: #85888c;
+                    margin-bottom: 0;
+                }
+                &-title{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 22px;
+                    font-weight: 800;
+                    line-height: 25px;
+                    margin-top: 10px;
+                }
+                &-description{
+                    font-family: "PF Encore Sans Pro";
+                    font-size: 17px;
+                    font-weight: normal;
+                    line-height: 24px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        &-department{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            &-title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 30px;
+                font-weight: 800;
+            }
+            &-line{
+                width: 846px;
+                height: 1px;
+                opacity: 0.3;
+                background-color: #9da0a6;
+                margin-top: 25px;
+            }
+            &-left{
+                display: flex;
+                flex-direction: column;
+                width: 262px;
+            }
+            &-right{
+                display: flex;
+                flex-direction: column;
+                width: 262px;
+                margin-left: 30px;
+            }
+            &-container{
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 5px;
+            }
+            &-link{
+                margin-top: 20px;
+                color: #00205b;
+                font-size: 17px;
+                font-weight: normal;
+                font-family: "PF Encore Sans Pro";
+                line-height: 20px;
+                &:hover{
+                    text-decoration: none;
+                    color: #FF9800;
+                }
+            }
+        }
+        &-form{
+
+            &-title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 30px;
+                font-weight: 800;
+                margin-top: 50px;
+            }
+            &-item{
+                &-button{
+                    width: 129px;
+                    height: 40px;
+                    border-radius: 3px;
+                    background-color: #ff9800;
+                    color: white;
+                    border: none;
+
+                }
+
+                &-title{
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-family: "PF Encore Sans Pro";
+                    color: #85888c;
+                    margin-top: 25px;
+                }
+                &-input{
+                    height: 40px;
+                    border: solid 1px #d8d8d8;
+                    width: 262px;
+                    &.big{
+                        width: 457px;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                    &.message {
+                        width: 652px;
+                        height: 160px;
+                    }
+                }
+                &.attach{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 25px;
+                }
+                &-important{
+                    font-size: 12px;
+                    font-weight: normal;
+                    color: #85888c;
+                    margin-top: 9px;
+                }
+                &-attachement{
+                    margin-left: 20px;
+                    margin-top: 5px;
+                    &-button{
+                        font-size: 17px;
+                        font-weight: normal;
+                        color: #00205b;
+                        &:hover{
+                            color: #FF9800;
+                            text-decoration: none;
+                        }
+                        margin-bottom: 25px;
+                    }
+                    &-icon{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    &-file{
+                        display: flex;
+                    }
+                    &-text{
+                        margin-top: 25px;
+                        margin-bottom: 0;
+                        font-size: 17px;
+                        font-weight: normal;
+                        color: #85888c;
+                        &-delete{
+                            font-size: 17px;
+                            font-weight: normal;
+                            color: #00205b;
+                            margin-top: 25px;
+                            margin-left: 10px;
+                            &:hover{
+                                color: #FF9800;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         &-section{
             position: relative;
             margin-top: 80px;
+            &.comm{
+                margin-top: 0;
+            }
             &-header{
                 display: flex;
                 justify-content: space-between;
@@ -737,3 +954,135 @@
         font-family: "PF Encore Sans Pro";
     }
   }
+  .Accordion {
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    width: 262px;
+  }
+  
+  .Accordion + .Accordion {
+    margin-top: 1em;
+  }
+  .Accordion input[type="radio"],
+  .Accordion input[type="checkbox"] {
+    display: none;
+  }
+  
+  .Accordion input:checked  + .Accordion-subElements > .Accordion-subElement {
+    height: 2em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  
+  .Accordion-item label {
+    display: block;
+    padding: 1em;
+    padding-left: 0;
+    background-color: transparent;
+    color: #00205b;
+    cursor: pointer;
+    border-top: 1px solid rgba(157, 160, 166, 0.3);
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: normal;
+  }
+
+  .Accordion-item {
+    &:last-child {
+        border-bottom: 1px solid rgba(157, 160, 166, 0.3);
+    }
+  }
+  .Accordion-item label:hover {
+    color: #FF9800;
+  }
+  
+  .Accordion-subElements {
+    padding-left: 0;
+  }
+  
+  .Accordion-subElement {
+    height: 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    font-size: 0.9em;
+    line-height: 2;
+    color: #00205b;
+    transition-property: height, -webkit-transform;
+    transition-property: transform, height;
+    transition-property: transform, height, -webkit-transform;
+    transition-duration: 0.3s;
+    overflow: hidden;
+  }
+  
+  .Accordion-subElement:hover {
+    color: #FF9800;
+  }
+  
+  .Accordion-subElement a {
+    display: block;
+    padding-left: 2em;
+    color: inherit;
+    text-decoration: none;
+  }
+  .arrowimg {
+    transition: all 0.75s 0.25s;
+    transform: rotate(90deg);
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+  }
+    .btn{
+        &.btn-secondary{
+            &.dropdown-toggle{
+                &.example{
+                    width: 263px;
+                    height: 40px;
+                    border: solid 1px #bcc0c6;
+                    background-color: #ffffff;
+                    color: #85888c;
+                    text-align: left;
+                    border-radius: 0;
+                    margin-top: 10px;
+                    &:after{
+                        color: #85888c;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-left: 180px;
+                    }
+                    &.big{
+                        width: 457px;
+                        height: 40px;
+                        border: solid 1px #bcc0c6;
+                        &:after{
+                            margin-left: 370px;
+                        }
+                    }
+                }    
+            }
+        }   
+    }
+    #example{
+        overflow: hidden;
+        height: 143px;
+    }
+    #examplebig{
+        width: 457px;
+        overflow: hidden;
+    }
+
+    .dropdown-item{
+        &.example{
+            height: 31px;
+            font-size: 15px;
+            font-weight: normal;
+            color: #2e3033;
+            padding-left: 12px;
+            &:hover{
+                background-color: rgba(133, 136, 140, 0.1);
+            }
+        }
+    }
