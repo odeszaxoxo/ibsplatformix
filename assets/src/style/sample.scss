@@ -960,6 +960,10 @@
     padding-left: 0;
     list-style: none;
     width: 262px;
+    &.account{
+        width: 100%;
+        margin-top: 0;
+    }
   }
   
   .Accordion + .Accordion {
@@ -971,27 +975,35 @@
   }
   
   .Accordion input:checked  + .Accordion-subElements > .Accordion-subElement {
-    height: 2em;
+    height: 600px;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  
-  .Accordion-item label {
+  .Accordion-item__label{
     display: block;
     padding: 1em;
     padding-left: 0;
     background-color: transparent;
+    border-top: 1px solid rgba(157, 160, 166, 0.3);
     color: #00205b;
     cursor: pointer;
-    border-top: 1px solid rgba(157, 160, 166, 0.3);
     margin-bottom: 0;
     font-size: 17px;
     font-weight: normal;
+    &.account{
+        border-top: none;
+        padding: 0;
+    }
   }
 
   .Accordion-item {
     &:last-child {
         border-bottom: 1px solid rgba(157, 160, 166, 0.3);
+    }
+    &.account{
+        &:last-child {
+            border-bottom: none;
+        }
     }
   }
   .Accordion-item label:hover {
@@ -1016,6 +1028,11 @@
     transition-property: transform, height, -webkit-transform;
     transition-duration: 0.3s;
     overflow: hidden;
+    &.account{  
+        &:hover{
+            color: #00205b;
+        }
+    }
   }
   
   .Accordion-subElement:hover {
