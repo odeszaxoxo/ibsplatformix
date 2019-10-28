@@ -358,17 +358,32 @@
                 width: 848px;
             }
             &.right{
+                margin-left: 59px;
                 width: 263px;
                 margin-top: 150px;
             }
         }
         &__wrapper{
             margin-top: 40px;
-            display: flex;
-            justify-content: space-between;
         }
         &__left{
-            width: 659px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &-row{
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 40px;
+                &:last-child{
+                    margin-top: 30px;
+                }
+                &.horizontal{
+                    display: flex;
+                    flex-direction: column;
+                    width:  263px;
+                    margin-top: 0;
+                }
+            }
         }
         &__right{
             width: 263px;
@@ -476,7 +491,8 @@
         }
         &__preview{
             position: relative;
-            height: 450px;
+            height: 400px;
+            width: 555px;
             z-index: 0;
             &-wrapper{
                 display: flex;
@@ -484,13 +500,13 @@
                 padding-top: 30px;
                 padding-left: 25px;
                 cursor: pointer;
-                height: 450px;
+                height: 400px;
             }
             &-image{
                 position: absolute;
                 z-index: -1;
-                width: 659px;
-                height: 450px;
+                width: 555px;
+                height: 400px;
             }
             &-tag{
                 background-color: #00205b;
@@ -503,7 +519,7 @@
                 text-align: center;
             }
             &-title{
-                font-size: 50px;
+                font-size: 40px;
                 font-weight: 800;
                 color: white;
                 font-family: 'Montserrat', sans-serif;
@@ -523,7 +539,7 @@
                 justify-content: flex-start;
                 font-family: "PF Encore Sans Pro";
                 &.vertical{
-                    margin-top: 15px;
+                    margin-top: 150px;
                 }
                 &.right{
                     margin-top: 70px;
@@ -677,11 +693,10 @@
                 margin-top: 15px;
                 font-family: 'Montserrat', sans-serif;
                 &.vertical{
-                    font-size: 40px;
+                    font-size: 30px;
                     font-weight: 800;
                     color: white;
-                    margin-top: 105px;
-                    width: 280px;
+                    width: 223px;
                 }
                 &.right{
                     font-size: 22px;
@@ -724,7 +739,9 @@
                 margin-top: 5px;
                 margin-bottom: 0;
                 font-size: 15px;
+                width: 220px;
                 font-family: "PF Encore Sans Pro";
+                line-height: 20px;
                 &.right{
                     font-size: 15px;
                     font-weight: normal;
@@ -774,6 +791,8 @@
             &-image{
                 position: absolute;
                 z-index: -1;
+                width: 263px;
+                height: 400px;
             }
             &-item-container{
                 padding-top: 25px;
@@ -791,6 +810,7 @@
                     margin-top: 23px;
                     width: calc(100% + 12px);
                     &.first{
+                        margin-top: 0;
                         &:hover{
                             border-radius: 6px;
                             box-shadow: 0 5px 9px 0 rgba(74, 47, 7, 0.1);
@@ -806,25 +826,27 @@
                     }
                 }
                 &.vertical{
-                    margin-top: 29px;
+                    margin-top: 6px;
                     height: 400px;
-                    width: 360px;
+                    width: 263px;
                     position: relative;
                     z-index: 1;
+                    margin-left: 29px;
                 }
             }
             &-right{
                 width: 263px;
                 &.first{
-                    margin-top: 29px;
                     position: relative;
                     height: 400px;
+                    margin-top: 6px;
+                    margin-left: 29px;
                 }
                 &.second{
                     height: 400px;
-                    margin-top: 29px;
                     background-image: radial-gradient(circle at 100% 1%, #ff9800, #bd201b 43%, #0042bd);
                     border-radius: 6px;
+                    margin-left: 30px;
                 }
                 &-container{
                     padding-left: 20px;
