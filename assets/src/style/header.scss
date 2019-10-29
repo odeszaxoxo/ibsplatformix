@@ -1,6 +1,6 @@
 .main-header{
     font-family: "PF Encore Sans Pro";
-    height: 140px;
+    height: 160px;
     background-image: linear-gradient(to bottom, rgba(58, 185, 255, 0.2), rgba(58, 186, 255, 0));
     z-index: 100;
     width: 100%;
@@ -16,19 +16,18 @@
         justify-content: space-between;
         &.second {
             margin-top: 0px;
-            border-bottom: 6px solid #ff9800;
             position: relative;
         }
     }
     &__logo{
-        min-width: 165px;
-        min-height: 62px; 
+        min-width: 200px;
+        min-height: 75px; 
         cursor: pointer;
     }
     &__achievements{
         max-height: 52px;
         width: 292px;
-        margin-top: 5px;
+        margin-top: 16px;
         border-radius: 3px;
         box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
         border: solid 1px #bcc0c6;
@@ -62,14 +61,17 @@
             align-items: center;
             width: calc(100% - 50px);
             position: relative;
+            cursor: pointer;
         }
         &-link{
             font-size: 17px;
             line-height: 20px;
-            color: #2e3033;
             font-weight: bold;
             background-color: inherit;
             position: relative;
+            &:hover{
+                color: #FF9800;
+            }
             &.last {
                 margin-right: 16px;
             }
@@ -81,7 +83,7 @@
     &__dropdown{
         &-button{
             background-color: transparent;
-            color: #2e3033;
+            color: inherit;
             font-weight: bold;
             padding: 16px;
             font-size: 24px;
@@ -97,7 +99,7 @@
             min-width: 200px;
             max-width: 400px;
             left: -40px;
-            top: calc(100% - 3px);
+            top: 100%;
             border-radius: 3px;
             box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
             z-index: 1000;
@@ -146,7 +148,7 @@
 }
 .input-group{
     &.employee {
-        margin-top: 5px;
+        margin-top: 16px;
         width: 628px;
     }
     &.search {
@@ -160,7 +162,7 @@
         z-index: 10;
     }
 }
-.asdasd{
+.searchbox{
     position: absolute;
     right: 0;
     background: linear-gradient(#EFF9FE, white);
@@ -184,7 +186,7 @@
             width: 2px;
             height: 40px;
             left: 0;
-            top: 13px;
+            top: 10px;
         }
     }
 }
@@ -202,7 +204,7 @@
     padding-left: 40px;
 }
 .search:focus {
-    width: 283px;
+    width: 323px;
     outline: none;
 }
 #button-addon2 {
