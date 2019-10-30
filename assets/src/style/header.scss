@@ -54,14 +54,16 @@
             width: 100%;
         }
         &-container{ 
-            height: 48px;
-            width: calc(165px + 34px + 628px);
+            height: 61px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: calc(100% - 50px);
             position: relative;
             cursor: pointer;
+            &:last-child{
+                border-bottom: 6px solid #FF9800;
+            }
         }
         &-link{
             font-size: 17px;
