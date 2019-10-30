@@ -7,7 +7,7 @@
         width: 100%;
         position: absolute;
         top: 0;
-        height: 1937px;
+        height: 1737px;
         left: 0;
         right: 0;
         overflow: hidden;
@@ -171,7 +171,16 @@
             background-color: #ff9800;
             &.light{
                 position: relative;
-                width: 358px;
+                width: 295px;
+                height: 1px;
+                opacity: 0.3;
+                background-color: #9da0a6;
+                margin-bottom: 5px;
+                margin-left: -20px;
+            }
+            &.big{
+                position: relative;
+                width: 365px;
                 height: 1px;
                 opacity: 0.3;
                 background-color: #9da0a6;
@@ -187,9 +196,22 @@
                 justify-content: space-around;
             }
         }
+        &-content{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-right{
+            margin-top: 185px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-left{
+            display: flex;
+            flex-direction: column;
+        }
         &-item{
             width: 399px;
-            height: 215px;
+            height: 165px;
             background-color: #f2f3f3;
             display: flex;
             align-items: flex-start;
@@ -198,60 +220,116 @@
             margin-top: 20px;
             position: relative;
             &-content{
-                margin-top: 20px;
-                margin-left: 20px;
+                padding: 20px;
+                width: 100%;
+                height: 100%;
+                &.left{
+                    padding: 15px;
+                }
             }
             &:before{
                 content: '';
                 width: 2px;
                 height: 235px;
-                right: -26px;
-                top: -202px;
+                right: -56px;
+                top: -152px;
                 position: absolute;
                 background-color: #d8d8d8;
                 z-index: -1;
             }
             &:after{
                 content: '';
-                width: 25px;
+                width: 100px;
                 height: 2px;
-                left: 100%;
-                top: 15%;
+                right: -14%;
+                top: 50%;
                 margin-top: -1px;
                 position: absolute;
                 background-color: #d8d8d8;
                 z-index: -1;
             }
-            &:last-child{
+            &.left{
+                height: 115px;
+                width: 325px;
+                margin-left: 99px;
                 &:before{
-                    content: none;
+                    content: '';
+                    width: 2px;
+                    height: 345px;
+                    left: -56px;
+                    top: -152px;
+                    position: absolute;
+                    background-color: #d8d8d8;
+                    z-index: -1;
                 }
                 &:after{
                     content: '';
-                    width: 25px;
+                    width: 105px;
                     height: 2px;
-                    left: -25px;
-                    top: 15%;
+                    left: -17%;
+                    top: 50%;
                     margin-top: -1px;
                     position: absolute;
                     background-color: #d8d8d8;
                     z-index: -1;
                 }
-            }
-            &.last{
-                &:after{
-                    content: none;
-                }
-                &:before{
+                &:last-child{
+                    &:before{
+                        content: none;
+                    }
+                    &:after{
                         content: '';
-                        width: 2px;
-                        height: 244px;
-                        right: 198px;
-                        top: -202px;
+                        width: 105px;
+                        height: 2px;
+                        left: -16%;
+                        top: 50%;
+                        margin-top: -1px;
                         position: absolute;
                         background-color: #d8d8d8;
                         z-index: -1;
-                   
+                    }
+                }
+            }
+            &.right{
+                height: 115px;
+                width: 325px;
+                margin-left: 74px;
+                &:before{
+                    content: '';
+                    width: 2px;
+                    height: 413px;
+                    left: -56px;
+                    top: -220px;
+                    position: absolute;
+                    background-color: #d8d8d8;
+                    z-index: -1;
+                }
+                &:after{
+                    content: '';
+                    width: 105px;
+                    height: 2px;
+                    left: -17%;
+                    top: 50%;
+                    margin-top: -1px;
+                    position: absolute;
+                    background-color: #d8d8d8;
+                    z-index: -1;
+                }
+                &:last-child{
+                    &:before{
+                        content: none;
+                    }
+                    &:after{
+                        content: '';
+                        width: 105px;
+                        height: 2px;
+                        left: -17%;
+                        top: 50%;
+                        margin-top: -1px;
+                        position: absolute;
+                        background-color: #d8d8d8;
+                        z-index: -1;
+                    }
                 }
             }
         }
@@ -261,7 +339,7 @@
             font-family: "PF Encore Sans Pro";
             line-height: 25px;
             padding-right: 10px;
-            margin-bottom: 0;
+            margin-bottom: 20px;
             cursor: pointer;
             &.director{
                 margin-left: 0;
@@ -269,6 +347,11 @@
                 margin-bottom: 13px;
                 font-weight: 800;
                 font-size: 30px;
+            }
+            &.left{
+                font-size: 16px;
+                line-height: 16px;
+                margin-bottom: 0;
             }
         }
         &-card{
@@ -278,9 +361,16 @@
         &-image{
             width: 45px;
             height: 45px;
+            &.left{
+                width: 30px;
+                height: 30px;
+            }
         }
         &-info{
             margin-left: 15px;
+            &.left{
+                margin-left: 10px;
+            }
         }
         &-job{
             font-size: 12px;
@@ -288,6 +378,9 @@
             color: #85888c;
             margin-bottom: 0;
             font-family: "PF Encore Sans Pro";
+            &.left{
+                font-size: 10px;
+            }
         }
         &-name{
             font-size: 17px;
@@ -296,6 +389,10 @@
             margin-bottom: 0;
             margin-top: 2px;
             font-family: "PF Encore Sans Pro";
+            &.left{
+                font-size: 13px;
+                margin-top: 0;
+            }
         }
         &-count{
             margin-top: 5px;
@@ -304,6 +401,11 @@
             font-weight: normal;
             color: #85888c;
             font-family: "PF Encore Sans Pro";
+            &.left{
+                font-size: 12px;
+                line-height: 12px;
+                margin-bottom: 5px;
+            }
         }
     }
     &__birthdays{
