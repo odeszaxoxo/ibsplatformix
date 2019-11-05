@@ -692,6 +692,9 @@
             }
             &-icon{
                 color: #85888c;
+                width: 20px;
+                height: 20px;
+
             }
             &-title{
                 font-size: 22px;
@@ -791,10 +794,12 @@
             &-likes{
                 display: flex;
                 justify-content: flex-start;
+                margin-left: 10px;
             }
             &-comments{
                 display: flex;
                 justify-content: flex-start;
+                margin-left: 10px;
             }
             &-image{
                 position: absolute;
