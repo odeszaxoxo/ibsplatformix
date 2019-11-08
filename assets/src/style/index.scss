@@ -824,6 +824,7 @@
                     width: calc(100% + 12px);
                     &.first{
                         margin-top: 0;
+                        width: 263px;
                         &:hover{
                             border-radius: 6px;
                             box-shadow: 0 5px 9px 0 rgba(74, 47, 7, 0.1);
@@ -831,6 +832,7 @@
                         }
                     }
                     &.second{
+                        width: 263px;
                         &:hover{
                             border-radius: 6px;
                             box-shadow: 0 5px 9px 0 rgba(74, 47, 7, 0.1);
@@ -854,12 +856,14 @@
                     height: 400px;
                     margin-top: 6px;
                     margin-left: 29px;
+                    width: 263px;
                 }
                 &.second{
                     height: 400px;
                     background-image: radial-gradient(circle at 100% 1%, #ff9800, #bd201b 43%, #0042bd);
                     border-radius: 6px;
                     margin-left: 30px;
+                    width: 263px;
                 }
                 &-container{
                     padding-left: 20px;
