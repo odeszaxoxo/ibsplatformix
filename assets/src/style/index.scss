@@ -494,7 +494,7 @@
             height: 400px;
             width: 555px;
             z-index: 0;
-            background-color: black;
+            background-color: #1c1c1c;
             border-radius: 6px;
             &-wrapper{
                 display: flex;
@@ -767,7 +767,7 @@
                 &-container{
                     &.newspage{
                         margin-right: 25px;
-                        margin-top: 25px;
+                        margin-top: 10px;
                     }
                 }
             }
@@ -885,7 +885,7 @@
                     position: relative;
                     z-index: 1;
                     margin-left: 29px;
-                    background-color: black;
+                    background-color: #1c1c1c;
                     border-radius: 6px;
                 }
             }
@@ -897,7 +897,7 @@
                     margin-top: 6px;
                     margin-left: 29px;
                     width: 263px;
-                    background-color: #000;
+                    background-color: #1c1c1c;
                     border-radius: 6px;
                     z-index: 1;
                     &.in{
