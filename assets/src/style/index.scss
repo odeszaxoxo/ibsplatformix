@@ -494,6 +494,8 @@
             height: 400px;
             width: 555px;
             z-index: 0;
+            background-color: black;
+            border-radius: 6px;
             &-wrapper{
                 display: flex;
                 flex-direction: column;
@@ -507,16 +509,21 @@
                 z-index: -1;
                 width: 555px;
                 height: 400px;
+                opacity: 0.5;
+                object-fit: cover;
+                border-radius: 6px;
             }
             &-tag{
-                background-color: #00205b;
-                width: 70px;
-                height: 20px;
-                border-radius: 10px;
                 color: white;
                 font-size: 12px;
                 line-height: 20px;
                 text-align: center;
+                display: inline-block;
+                height: 20px;
+                background-color: #00205b;
+                border-radius: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
             &-title{
                 font-size: 40px;
@@ -532,7 +539,8 @@
                 font-family: "PF Encore Sans Pro";
             }
             &-footer{
-                margin-top: 35px;
+                position: absolute;
+                bottom: 5px;
                 font-size: 12px;
                 color: white;
                 display: flex;
@@ -677,8 +685,6 @@
             }
             &-item-wrapper{
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
                 border: solid 1px #cfd2d6; 
                 cursor: pointer;
                 width: 100%;
@@ -686,9 +692,15 @@
                 border-radius: 6px;
                 padding-top: 25px;
                 padding-left: 20px;
+                position: relative;
                 &:hover{
                     border: solid 1px transparent; 
                 }
+            }
+            &-item-content{
+                flex-direction: column;
+                justify-content: space-between;
+                height: calc(100% - 30px);
             }
             &-icon{
                 color: #85888c;
@@ -716,15 +728,18 @@
                 }
             }
             &-tag{
-                width: 70px;
                 height: 20px;
-                border-radius: 10px;
                 color: white;
                 font-size: 12px;
                 line-height: 20px;
                 text-align: center;
                 margin-bottom: 0;
                 font-family: "PF Encore Sans Pro";
+                display: inline-block;
+                border-radius: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                cursor: pointer;
                 &.first{    
                     background-color: #ff9800;
                 }
@@ -733,17 +748,37 @@
                 }
                 &.third{
                     background-color: #e4200e;
-                    width: 86px;
+                }
+                &.four{
+                    background-color: green;
+                }
+                &.five{
+                    background-color: yellow;
+                }
+                &.six{
+                    background-color: black;
+                }
+                &.seven{
+                    background-color: orange;
+                }
+                &.eight{
+                    background-color: brown;
+                }
+                &-container{
+                    &.newspage{
+                        margin-right: 25px;
+                        margin-top: 25px;
+                    }
                 }
             }
             &-footer{
-                margin-top: 21px;
                 font-size: 12px;
                 color: #85888c;
                 display: flex;
                 justify-content: flex-start;
                 font-family: "PF Encore Sans Pro";
-                
+                position: absolute;
+                bottom: 0;
             }
             &-description{
                 height: 20px;
@@ -806,6 +841,9 @@
                 z-index: -1;
                 width: 263px;
                 height: 400px;
+                opacity: .5;
+                object-fit: cover;
+                border-radius: 6px;
             }
             &-item-container{
                 padding-top: 25px;
@@ -847,6 +885,8 @@
                     position: relative;
                     z-index: 1;
                     margin-left: 29px;
+                    background-color: black;
+                    border-radius: 6px;
                 }
             }
             &-right{
@@ -857,6 +897,12 @@
                     margin-top: 6px;
                     margin-left: 29px;
                     width: 263px;
+                    background-color: #000;
+                    border-radius: 6px;
+                    z-index: 1;
+                    &.in{
+                        margin-left: 0; 
+                    }
                 }
                 &.second{
                     height: 400px;

@@ -75,6 +75,20 @@
         &-left{
             width: 655px;
         }   
+        &-tags{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            &-count{
+                height: 20px;
+                font-size: 12px;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 0;
+                font-family: "PF Encore Sans Pro";
+                display: inline-block;
+            }
+        }
         &-top{
             display: flex;
             justify-content: space-between;
